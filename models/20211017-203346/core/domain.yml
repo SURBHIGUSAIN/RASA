@@ -1,0 +1,84 @@
+version: '2.0'
+config:
+  store_entities_as_slots: true
+session_config:
+  session_expiration_time: 60
+  carry_over_slots_to_new_session: true
+intents:
+- greet:
+    use_entities: true
+- goodbye:
+    use_entities: true
+- affirm:
+    use_entities: true
+- deny:
+    use_entities: true
+- mood_great:
+    use_entities: true
+- mood_unhappy:
+    use_entities: true
+- bot_challenge:
+    use_entities: true
+- ask_stress_level:
+    use_entities: true
+- ask_eat_healthy:
+    use_entities: true
+- ask_excercise:
+    use_entities: true
+- feeling_confused:
+    use_entities: true
+- suggest_happy_song:
+    use_entities: true
+- ask_things to do:
+    use_entities: true
+- how_be_productive_time_management:
+    use_entities: true
+- ask_how_happy_peaceful:
+    use_entities: true
+- ask_weather:
+    use_entities: true
+- ask_loose_weight:
+    use_entities: true
+entities: []
+slots: {}
+responses:
+  utter_greet:
+  - text: Hey! How are you?
+  utter_cheer_up:
+  - text: 'Here is something to cheer you up:'
+    image: https://i.imgur.com/nGF1K8f.jpg
+  utter_did_that_help:
+  - text: Did that help you?
+  utter_happy:
+  - text: Great, carry on!
+  utter_goodbye:
+  - text: Bye
+  utter_iamabot:
+  - text: I am a bot, powered by Rasa.
+  utter_stress_info:
+  - text: 'HEY! its ok sometimes to feel overwhelmed. Sometimes things happen that u dont want , And yes here are the things that you can do to lower stress.1-Exercise!2-Consider supplements[Lemon balm],[Ashwagandha],[Omega-3 fatty acids],[Green tea]!3-Light a candle of your favourite scent!4-Reduce your caffeine intake!,5-Write it down. And look at this:'
+    image: https://www.google.com/imgres?imgurl=https%3A%2F%2Fthumbs.dreamstime.com%2Fb%2Fhappy-dog-flowers-meadow-73036758.jpg&imgrefurl=https%3A%2F%2Fwww.dreamstime.com%2Fphotos-images%2Fhappy-dog.html&tbnid=Nlvm1D1944gPeM&vet=12ahUKEwifgc-6htHzAhW8nUsFHR49CEEQMygGegUIARDaAQ..i&docid=MK27wT0AvUMKLM&w=800&h=544&q=image%20of%20a%20happy%20dog&ved=2ahUKEwifgc-6htHzAhW8nUsFHR49CEEQMygGegUIARDaAQ
+  utter_eat_healthy:
+  - text: IT'S GREAT THAT YOU DECIDED TO EAT HEALTHY! I can help you to eat healthy.These tips will help:1. Eating lots of vegetables and fruit.2. Choosing whole grain foods.3. Eating protein foods.4. Limiting highly and ultra-processed foods.5. Making water your drink of choice.YOU CAN DO THIS !!!!
+    image: https://heartstrokeprod.azureedge.net/-/media/images/get-healthy/eat-variety-healthy-foods-image.ashx?rev=55e9bc26f3824338a02737d72a63fdfe&h=345&w=614&la=en&hash=5BB1FA96012855C0785B6DD1E5D17ECC
+  utter_excercise_info:
+  - text: Exercise involves engaging in physical activity and increasing the heart rate beyond resting levels. It is an important part of preserving physical and mental health.Some exercises combine stretching, muscle conditioning, and balance training. A popular and effective example is yoga.Agility trainingAgility training aims to improve a person’s ability to maintain control while speeding up, slowing down, and changing direction.The following sports are examples of ones that require agility:tennisAmerican footballhockeybadmintonvolleyballbasketballsoccermartial artsAnaerobic exercise does not use oxygen for energy. People use this type of exercise to build power, strength, and muscle mass.These exercises are high-intensity activities that should last no longer than around 2 minutes. Anaerobic exercises include:weightliftingsprintingintensive and fast skipping with a ropeinterval trainingisometricsany rapid burst of intense activity.
+  utter_confused_info:
+  - text: We all get confused at times, but prolonged periods of confusion can cause us to feel that we are stuck in a never-ending, foggy web of uncertainty.But what if I told you that confusion was good for you?1. Accept where you are.2. Take a deep breath.3. Focus on what you know.4. Be patient.HOPE TO SEE YOU FEELINGS GREAT AGAIN!!!!
+    image: https://www.google.com/url?sa=i&url=https%3A%2F%2Fwww.yourcourageouslife.com%2Fwhat-to-do-when-you-feel-totally-lost-and-confused%2F&psig=AOvVaw0fN-7tSHyYhpWTJakvjj-n&ust=1634547696610000&source=images&cd=vfe&ved=0CAsQjRxqFwoTCICQpPGK0fMCFQAAAAAdAAAAABAD.
+  utter_happy_song:
+  - text: HERS'S FROM MY SIDE go to this link:(https://www.youtube.com/watch?v=6LCclEmBllI)
+  utter_productive_info:
+  - text: Increase productivity and become highly efficient with these habits:1-Focus on most important tasks first.2-Cultivate deep work.3-Use the Eisenhower Matrix to identify long-term priorities.4-Use the 80/20 rule.5-Break tasks into smaller pieces.6-Work before you get motivated or inspired.or refer this video (https://www.youtube.com/watch?v=lbtte7iTS9g).
+  utter_happy_info:
+  - text: You can't be happy everytime BUT can tryyyyy...Here are some tips from my side-1-DECIDE WHAT IS IMPORTANT.2-EXAMINE YOUR COMMITMENTS.3-DO LESS EACH DAY.4-LEAVE TIME BETWEEN TASKS OR APPOINTMENTS.5-SLOW DOWN AND ENJOY EVERY TASK.6-SINGLE-TASK; DON'T MULTI-TASK.
+    image: https://www.outerbanksvacations.com/sites/default/files/uploads/peace-blog3.jpg
+  utter_weather_info:
+  - text: AAHHH! PERFECT to rest at home.
+    image: https://www.shutterstock.com/image-photo/small-two-seater-plane-pontoons-flies-2051304203
+  utter_loose_weight:
+  - text: GLADDD! You decided to get in shape---!HERE are some tips from my side:1. Cut back on refined carbs.2. Eat protein, fat, and vegetables.3.Low carb and leafy green vegetables.4.Exercise Regularly.AND DON'T FORGET TO EAT...
+    image: https://images.onhealth.com/images/slideshow/10-habits-that-can-help-you-lose-weight-s12-summary.jpg
+actions: []
+forms: {}
+e2e_actions: []
