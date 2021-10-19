@@ -14,8 +14,10 @@ STEPS:
 
 3. Collect data from the user with Rasa forms
 
-4. Connect with an external API using Rasa custom actions
+4. Create wellness table on AIRTABLE to post the form's collected data to a spreadsheet.(not provided in the above source codes)
 
-5. Connect your assistant to Twilio.(not provided in the above source codes)
+5. Connect with an external API using Rasa custom actions
 
-6 .Keep improving your assistant using conversation driven development principles.(not provided in the above source codes)
+6. Connect your assistant to Twilio.(not provided in the above source codes)
+
+7 .Keep improving your assistant using conversation driven development principles.
